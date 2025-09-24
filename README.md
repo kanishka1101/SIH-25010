@@ -1,7 +1,7 @@
 # Smart India Hackathon Workshop
-# Date:
-## Register Number:
-## Name:
+# Date:24-09-2025
+## Register Number:25011903
+## Name:Kanishka G
 ## Problem Title
 SIH 25010: Smart Crop Advisory System for Small and Marginal Farmers
 ## Problem Description
@@ -41,28 +41,72 @@ Government of Punjab
 Agriculture, FoodTech & Rural Development
 
 ## Proposed Solution
-<h3>Remove These Lines</h3>
-<ul><li>Detailed explanation of the proposed solution</li>
-<li>How it addresses the problem</li>
-<li>Innovation and uniqueness of the solution</li></ul>
+
+Crop Disease & Pest Detection
+Farmers capture/upload leaf images using their smartphones.
+An AI model (CNN, optimized for TensorFlow Lite) analyzes the image to detect crop diseases/pests.
+Provides output with:
+Disease identified
+Confidence level
+Severity level (mild, moderate, severe)
+Suggested organic/chemical remedies and preventive steps
+
+Fertilizer & Soil Nutrition Advisory
+Inputs: crop type, stage, soil N-P-K/pH (optional), farm size.
+Rule-based engine recommends:
+Fertilizer type and dose
+Application timing
+Weather-sensitive adjustments (avoid fertilizer before heavy rainfall).
+
+Smart Irrigation Advisory
+Uses local weather forecasts + optional soil moisture sensors.
+Predicts daily/weekly water needs (crop evapotranspiration model).
+Alerts farmers when irrigation is required and how much water to apply.
 
 ## Technical Approach
-<h3>Remove These Lines</h3>
-<ul><li>Technologies to be used (e.g. programming languages, frameworks, hardware)
-</li>
-<li>Methodology and process for implementation <b>(Flow Charts/Images/ working prototype)</b></li></ul>
+Accessibility Features
+Multilingual UI with voice support for semi-literate farmers.
+Offline-first with SMS fallback in low-connectivity areas.
+Simple icon-based interface for usability.
+
+Technology Stack
+Mobile App: Android (Kotlin) / React Native
+Backend: Python Flask/Django REST APIs
+Machine Learning: TensorFlow Lite / PyTorch Mobile for on-device inference
+Database: PostgreSQL + Redis
+
+Data Sources:
+
+PlantVillage dataset for crop disease images
+IMD/Weather APIs for weather forecasts
+Govt. Mandi Price APIs for crop market rates
+<img width="796" height="749" alt="Screenshot 2025-09-24 101711" src="https://github.com/user-attachments/assets/661df421-5c56-4822-9af4-bd7a31d74de1" />
+
 
 ## Feasibility and Viability
-<h3>Remove These Lines</h3>
-<ul><li>Analysis of the feasibility of the idea</li>
-<li>Potential challenges and risks</li>
-<li>Strategies for overcoming these challenges</li></ul>
+Target Users: Small & marginal farmers.
+Accessibility: Mobile app or SMS-based advisory can reach farmers with basic phones.
+Ease of Use: UI/UX must be simple, language-localized, and visually guided.
+Training: Farmers may need short-term training sessions or demo videos.
+
+ Market Viability
+
+Target Market: Millions of small and marginal farmers in India and other developing countries.
+Adoption Drivers:
+Increasing smartphone penetration.
+Government initiatives for digital agriculture (e.g., PM-FME, eNAM).
+Rising awareness about modern farming techniques.
 
 ## Impact and Benefits
-<h3>Remove These Lines</h3>
-<ul><li>Potential impact on the target audience</li>
-<li>Benefits of the solution (social, economic, environmental, etc.)</li></ul>
+Economic Impact
+Increased Crop Yield: Personalized crop and input recommendations lead to better productivity.
+Reduced Input Costs: Optimized use of fertilizers, pesticides, and water reduces unnecessary expenses.
+Better Market Decisions: Real-time price alerts help farmers sell crops at optimal rates, increasing income.
+
+Technological and Environmental Benefits
+Precision Agriculture: Data-driven recommendations optimize farming operations.
+Reduced Environmental Impact: Less chemical runoff, efficient water usage, and soil preservation.
+Resource Optimization: Sensors and AI models help make optimal use of limited land, water, and fertilizer.
 
 ## Research and References
-<h3>Remove These Lines</h3>
-<ul><li>Details / Links of the reference and research work</li></ul>
+https://ijisrt.com/assets/upload/files/IJISRT25MAY1858.pdf
